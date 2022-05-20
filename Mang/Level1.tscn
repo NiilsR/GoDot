@@ -1,0 +1,179 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://YL10.tscn" type="PackedScene" id=1]
+[ext_resource path="res://image1-12.webp" type="Texture" id=2]
+[ext_resource path="res://Level.gd" type="Script" id=3]
+[ext_resource path="res://vastane.tscn" type="PackedScene" id=4]
+[ext_resource path="res://kaamera.tscn" type="PackedScene" id=6]
+[ext_resource path="res://collision.gd" type="Script" id=7]
+[ext_resource path="res://Roboto-Black.ttf" type="DynamicFontData" id=8]
+
+[sub_resource type="DynamicFont" id=16]
+size = 80
+font_data = ExtResource( 8 )
+
+[sub_resource type="RectangleShape2D" id=17]
+extents = Vector2( 82, 120 )
+
+[sub_resource type="DynamicFont" id=19]
+size = 126
+font_data = ExtResource( 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=18]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="TileSet" id=5]
+0/name = "puu"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 192, 256, 128, 128 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "poosas"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 320, 128, 128, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "maa"
+2/texture = ExtResource( 2 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 320, 384 )
+2/tile_mode = 1
+2/autotile/bitmask_mode = 0
+2/autotile/bitmask_flags = [ Vector2( 0, 0 ), 256, Vector2( 0, 1 ), 260, Vector2( 0, 2 ), 4, Vector2( 0, 3 ), 261, Vector2( 0, 4 ), 324, Vector2( 0, 5 ), 4, Vector2( 1, 0 ), 320, Vector2( 1, 1 ), 325, Vector2( 1, 2 ), 5, Vector2( 1, 3 ), 69, Vector2( 1, 4 ), 321, Vector2( 1, 5 ), 1, Vector2( 2, 0 ), 64, Vector2( 2, 1 ), 65, Vector2( 2, 2 ), 1, Vector2( 2, 4 ), 65, Vector2( 2, 5 ), 260, Vector2( 3, 0 ), 65, Vector2( 3, 2 ), 260, Vector2( 3, 3 ), 65, Vector2( 4, 0 ), 260, Vector2( 4, 2 ), 65, Vector2( 4, 3 ), 260 ]
+2/autotile/icon_coordinate = Vector2( 0, 0 )
+2/autotile/tile_size = Vector2( 64, 64 )
+2/autotile/spacing = 0
+2/autotile/occluder_map = [  ]
+2/autotile/navpoly_map = [  ]
+2/autotile/priority_map = [  ]
+2/autotile/z_index_map = [  ]
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 18 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 2, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 2, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 2, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 1, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 1, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 4 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 1, 4 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+
+[node name="Level1" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 110, 0 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Kaamera" parent="Player" instance=ExtResource( 6 )]
+
+[node name="ELUD" type="RichTextLabel" parent="Player/Kaamera"]
+margin_left = 46.0
+margin_top = -100.0
+margin_right = 296.0
+margin_bottom = 25.0
+custom_fonts/normal_font = SubResource( 16 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 3232, -486 )
+script = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 0, 1 )
+shape = SubResource( 17 )
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="GAMEOVER" type="RichTextLabel" parent="Node2D"]
+margin_left = 96.0
+margin_top = -112.0
+margin_right = 811.0
+margin_bottom = 53.0
+custom_colors/default_color = Color( 1, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 19 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 5 )
+format = 1
+tile_data = PoolIntArray( -458729, 0, 0, -393193, 1, 0, -393170, 2, 0, -393169, 2, 1, -393168, 2, 1, -393167, 2, 1, -393166, 2, 1, -393165, 2, 2, -327661, 1, 0, -327659, 2, 0, -327658, 2, 1, -327657, 2, 1, -327656, 2, 1, -327655, 2, 2, -327640, 2, 0, -327639, 2, 1, -327638, 2, 1, -327637, 2, 2, -327634, 2, 65536, -327633, 2, 65537, -327632, 2, 65537, -327631, 2, 65537, -327630, 2, 65537, -327629, 2, 262146, -262126, 2, 0, -262125, 2, 1, -262124, 2, 1, -262123, 2, 262144, -262122, 2, 65537, -262121, 2, 65537, -262120, 2, 65537, -262119, 2, 262146, -262108, 0, 0, -262104, 2, 327680, -262103, 2, 131073, -262102, 2, 131073, -262101, 2, 131074, -262098, 2, 327680, -262097, 2, 131073, -262096, 2, 131073, -262095, 2, 131073, -262094, 2, 131073, -262093, 2, 327681, -196590, 2, 131072, -196589, 2, 131073, -196588, 2, 131073, -196587, 2, 131073, -196586, 2, 131073, -196585, 2, 131073, -196584, 2, 131073, -196583, 2, 327681, -131038, 2, 0, -131037, 2, 1, -131036, 2, 1, -131035, 2, 1, -131034, 2, 2, -65522, 2, 0, -65521, 2, 1, -65520, 2, 1, -65519, 2, 2, -65509, 1, 0, -65507, 1, 0, -65506, 1, 0, -65502, 2, 327680, -65501, 2, 131073, -65500, 2, 131073, -65499, 2, 131073, -65498, 2, 327681, 14, 2, 327680, 15, 2, 131073, 16, 2, 131073, 17, 2, 131074, 27, 2, 0, 28, 2, 1, 29, 2, 1, 30, 2, 1, 31, 2, 2, 65542, 0, 0, 65547, 1, 0, 65559, 0, 0, 65561, 0, 0, 65563, 2, 327680, 65564, 2, 131073, 65565, 2, 131073, 65566, 2, 131073, 65567, 2, 327681, 131073, 1, 0, 131077, 1, 0, 131082, 2, 0, 131083, 2, 1, 131084, 2, 2, 131087, 1, 0, 131088, 1, 0, 131089, 1, 0, 131095, 1, 0, 131098, 1, 0, 196608, 2, 0, 196609, 2, 1, 196610, 2, 1, 196611, 2, 1, 196612, 2, 1, 196613, 2, 1, 196614, 2, 1, 196615, 2, 1, 196616, 2, 1, 196617, 2, 1, 196618, 2, 262144, 196619, 2, 65537, 196620, 2, 196611, 196623, 2, 0, 196624, 2, 1, 196625, 2, 1, 196626, 2, 2, 196630, 2, 0, 196631, 2, 1, 196632, 2, 1, 196633, 2, 1, 196634, 2, 1, 196635, 2, 2, 262144, 2, 196612, 262145, 2, 65537, 262146, 2, 65537, 262147, 2, 65537, 262148, 2, 65537, 262149, 2, 65537, 262150, 2, 65537, 262151, 2, 65537, 262152, 2, 65537, 262153, 2, 65537, 262154, 2, 65537, 262155, 2, 196609, 262156, 2, 131074, 262159, 2, 327680, 262160, 2, 131073, 262161, 2, 131073, 262162, 2, 131074, 262166, 2, 327680, 262167, 2, 131073, 262168, 2, 131073, 262169, 2, 131073, 262170, 2, 131073, 262171, 2, 131074, 327680, 2, 327680, 327681, 2, 131073, 327682, 2, 131073, 327683, 2, 131073, 327684, 2, 131073, 327685, 2, 131073, 327686, 2, 131073, 327687, 2, 131073, 327688, 2, 131073, 327689, 2, 131073, 327690, 2, 131073, 327691, 2, 131074 )
+
+[node name="KinematicBody2D" parent="TileMap" instance=ExtResource( 4 )]
+position = Vector2( 1545, -364 )
+
+[node name="KinematicBody2D2" parent="TileMap" instance=ExtResource( 4 )]
+position = Vector2( 1028, -107 )
+
+[node name="KinematicBody2D3" parent="TileMap" instance=ExtResource( 4 )]
+position = Vector2( 1910, -41 )
