@@ -1,0 +1,179 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Roboto-Black.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://image1-12.webp" type="Texture" id=2]
+[ext_resource path="res://kaamera.tscn" type="PackedScene" id=3]
+[ext_resource path="res://collision3.gd" type="Script" id=4]
+[ext_resource path="res://YL10.tscn" type="PackedScene" id=5]
+
+[sub_resource type="DynamicFont" id=22]
+size = 80
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+font_data = ExtResource( 1 )
+
+[sub_resource type="ConvexPolygonShape2D" id=18]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="TileSet" id=19]
+0/name = "puu"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 192, 256, 128, 128 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "poosas"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 320, 128, 128, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "maa"
+2/texture = ExtResource( 2 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 320, 384 )
+2/tile_mode = 1
+2/autotile/bitmask_mode = 0
+2/autotile/bitmask_flags = [ Vector2( 0, 0 ), 256, Vector2( 0, 1 ), 260, Vector2( 0, 2 ), 4, Vector2( 0, 3 ), 261, Vector2( 0, 4 ), 324, Vector2( 0, 5 ), 4, Vector2( 1, 0 ), 320, Vector2( 1, 1 ), 325, Vector2( 1, 2 ), 5, Vector2( 1, 3 ), 69, Vector2( 1, 4 ), 321, Vector2( 1, 5 ), 1, Vector2( 2, 0 ), 64, Vector2( 2, 1 ), 65, Vector2( 2, 2 ), 1, Vector2( 2, 4 ), 65, Vector2( 2, 5 ), 260, Vector2( 3, 0 ), 65, Vector2( 3, 2 ), 260, Vector2( 3, 3 ), 65, Vector2( 4, 0 ), 260, Vector2( 4, 2 ), 65, Vector2( 4, 3 ), 260 ]
+2/autotile/icon_coordinate = Vector2( 0, 0 )
+2/autotile/tile_size = Vector2( 64, 64 )
+2/autotile/spacing = 0
+2/autotile/occluder_map = [  ]
+2/autotile/navpoly_map = [  ]
+2/autotile/priority_map = [  ]
+2/autotile/z_index_map = [  ]
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 18 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 2, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 2, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 2, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 1, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 1, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 4 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 1, 4 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+
+[sub_resource type="DynamicFont" id=20]
+size = 20
+font_data = ExtResource( 1 )
+
+[sub_resource type="RectangleShape2D" id=21]
+extents = Vector2( 36.9063, 26.25 )
+
+[node name="end" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 5 )]
+position = Vector2( 110, 0 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Kaamera" parent="Player" instance=ExtResource( 3 )]
+
+[node name="ELUD" type="RichTextLabel" parent="Player/Kaamera"]
+margin_left = 46.0
+margin_top = -100.0
+margin_right = 296.0
+margin_bottom = 25.0
+custom_fonts/normal_font = SubResource( 22 )
+
+[node name="GAMEOVER" type="RichTextLabel" parent="."]
+margin_left = 312.0
+margin_top = 192.0
+margin_right = 879.0
+margin_bottom = 322.0
+custom_colors/default_color = Color( 0.243137, 1, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "VICTORY"
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 19 )
+format = 1
+tile_data = PoolIntArray( -65538, 2, 0, -65537, 2, 1, -131072, 2, 1, -131071, 2, 1, -131070, 2, 1, -131069, 2, 1, -131068, 2, 1, -131067, 2, 1, -131066, 2, 1, -131065, 2, 1, -131064, 2, 1, -131063, 2, 1, -131062, 2, 1, -131061, 2, 1, -131060, 2, 1, -131059, 2, 1, -131058, 2, 1, -131057, 2, 1, -131056, 2, 1, -131055, 2, 2, -2, 2, 196612, -1, 2, 196609, -65536, 2, 131073, -65535, 2, 131073, -65534, 2, 131073, -65533, 2, 131073, -65532, 2, 131073, -65531, 2, 131073, -65530, 2, 131073, -65529, 2, 131073, -65528, 2, 131073, -65527, 2, 131073, -65526, 2, 131073, -65525, 2, 131073, -65524, 2, 131073, -65523, 2, 131073, -65522, 2, 131073, -65521, 2, 131073, -65520, 2, 196608, -65519, 2, 3, 65534, 2, 65536, 65535, 2, 196611, 16, 2, 196612, 17, 2, 196611, 131070, 2, 65536, 131071, 2, 196611, 65552, 2, 65536, 65553, 2, 65538, 196606, 2, 131075, 196607, 2, 65538, 131088, 2, 131075, 131089, 2, 196611, 262142, 2, 327682, 262143, 2, 65538, 196624, 2, 4, 196625, 2, 3, 327678, 2, 4, 327679, 2, 196611, 262160, 2, 327682, 262161, 2, 3, 393214, 2, 131075, 393215, 2, 196611, 327696, 2, 4, 327697, 2, 65538, 458750, 2, 327682, 458751, 2, 196611, 393232, 2, 65536, 393233, 2, 65538, 524286, 2, 196612, 524287, 2, 3, 458766, 0, 0, 458768, 2, 4, 458769, 2, 262146, 589822, 2, 327682, 589823, 2, 65538, 524288, 1, 0, 524289, 1, 0, 524290, 1, 0, 524291, 1, 0, 524292, 1, 0, 524293, 1, 0, 524294, 1, 0, 524295, 1, 0, 524296, 1, 0, 524297, 1, 0, 524298, 1, 0, 524299, 1, 0, 524300, 1, 0, 524301, 1, 0, 524302, 1, 0, 524304, 2, 4, 524305, 2, 196611, 655358, 2, 65536, 655359, 2, 262145, 589824, 2, 1, 589825, 2, 1, 589826, 2, 1, 589827, 2, 1, 589828, 2, 1, 589829, 2, 1, 589830, 2, 1, 589831, 2, 1, 589832, 2, 1, 589833, 2, 1, 589834, 2, 1, 589835, 2, 1, 589836, 2, 1, 589837, 2, 1, 589838, 2, 1, 589839, 2, 1, 589840, 2, 262144, 589841, 2, 65538, 720894, 2, 65536, 720895, 2, 65537, 655360, 2, 65537, 655361, 2, 65537, 655362, 2, 65537, 655363, 2, 65537, 655364, 2, 65537, 655365, 2, 65537, 655366, 2, 65537, 655367, 2, 65537, 655368, 2, 65537, 655369, 2, 65537, 655370, 2, 65537, 655371, 2, 65537, 655372, 2, 65537, 655373, 2, 65537, 655374, 2, 65537, 655375, 2, 65537, 655376, 2, 65537, 655377, 2, 262146, 786430, 2, 327682, 786431, 2, 65537, 720896, 2, 65537, 720897, 2, 65537, 720898, 2, 65537, 720899, 2, 65537, 720900, 2, 65537, 720901, 2, 65537, 720902, 2, 65537, 720903, 2, 65537, 720904, 2, 65537, 720905, 2, 65537, 720906, 2, 65537, 720907, 2, 65537, 720908, 2, 65537, 720909, 2, 65537, 720910, 2, 65537, 720911, 2, 65537, 720912, 2, 65537, 720913, 2, 262146, 851966, 2, 131072, 851967, 2, 131073, 786432, 2, 131073, 786433, 2, 131073, 786434, 2, 131073, 786435, 2, 131073, 786436, 2, 131073, 786437, 2, 131073, 786438, 2, 131073, 786439, 2, 131073, 786440, 2, 131073, 786441, 2, 131073, 786442, 2, 131073, 786443, 2, 131073, 786444, 2, 131073, 786445, 2, 131073, 786446, 2, 131073, 786447, 2, 131073, 786448, 2, 131073, 786449, 2, 327681 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 936.0
+margin_top = 409.0
+margin_right = 1019.0
+margin_bottom = 449.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 20 )
+text = "EXIT"
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 961, 507 )
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 1.90625, 1 )
+shape = SubResource( 21 )
